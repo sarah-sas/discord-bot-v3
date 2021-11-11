@@ -29,7 +29,7 @@ module.exports = {
 module.exports.details = {
     name: 'dev-info',
     author: 'Sarah-SAS#4206',
-    icon: 'https://cdn.discordapp.com/avatars/365350852967399454/ce6e6e91fa887aa86e23ef356c9878fe',
+    icon: 'https://cdn.discordapp.com/avatars/633668381954015235/9b0672791e6f9d3d2319b37bc861b5e5',
     description: 'Ask the 8-Ball a question!',
     usage: `${prefix.prefix}dev-info`
 }

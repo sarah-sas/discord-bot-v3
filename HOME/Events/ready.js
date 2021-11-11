@@ -46,5 +46,6 @@ module.exports = {
         if (info.buttonFiles.length > 0) console.log(chalk.bold.yellow("[Handler]") + chalk.bold.blue(` Loaded ${info.buttonFiles.length} buttons.`))
         if (info.selectMenuFiles.length > 0) console.log(chalk.bold.white("[Handler]") + chalk.bold.green(` Loaded ${info.selectMenuFiles.length} selectMenus.`))
         if (info.slashCount.length > 0) console.log(chalk.bold.red("[Handler]") + chalk.bold.yellow(` Loaded ${info.slashCount.length} slashCommands.`))
+        console.log(chalk.bold.red("[Warning] ") + chalk.bold.yellow(`Some of the commands that are in the original folder (the name) do not work`))
     },
 };
