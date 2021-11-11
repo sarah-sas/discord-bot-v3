@@ -15,7 +15,7 @@ module.exports = function(passport) {
         if(config.Admin.includes(profile.id)){
             return cb(null, profile);
         }else{
-            return cb(null, false, { message: 'Unauthorised! Please add your client ID to the config!' })
+            return cb(null, profile);
         }
     }));
 

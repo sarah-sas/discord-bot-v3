@@ -9,7 +9,7 @@ const jsonfile = require('jsonfile')
 
 router.get('/guilds',ensureAuthenticated,(req,res) =>{
     var theme = jsonfile.readFileSync(themes);
-    let guilds = discord.client.guilds.cache.array()
+    let guilds = discord.client.guilds.cache
     res.render('home/guilds',{
         guilds:guilds,
         profile:req.user,
