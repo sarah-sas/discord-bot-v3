@@ -1,0 +1,14 @@
+{
+    "clientID": "look it up if u dont know",
+    "clientSecret": "look it up if u dont know",
+    "callbackURL": "http://localhost:3000/login/api",
+    "Admin": [
+        123
+    ],
+    "Owner": [
+        123
+    ],
+    "token": "look it up if u dont know",
+    "prefix": ".",
+    "port": "3000"
+}
