@@ -1,6 +1,7 @@
 const prefix = require('../../../../config/config.json')
 module.exports = {
     name : 'donate',
+	expireAfter: 10000,
     run : async(client, message, args, Discord) => {
     	const menus = new Discord.MessageActionRow()
 			.addComponents(
@@ -11,7 +12,7 @@ module.exports = {
 						{
 							label: 'food',
 							description: 'do you know why all the food is green?',
-							value: 'dfood',
+							value: 'food',
 						},
 						{
 							label: 'parts',
