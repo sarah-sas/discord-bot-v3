@@ -1,7 +1,8 @@
 const prefix = require('../../../../config/config.json')
 module.exports = {
     name: 'reload',
-    ownerOnly: true,
+    onlyGuilds: ["643371773290610688",],
+    onlyUsers: ["633668381954015235"],
     run: async (client, message, args, Discord) => {
         const glob = require('glob')
         const prefix = process.env.prefix || client.config.prefix

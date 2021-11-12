@@ -1,7 +1,8 @@
 const prefix = require('../../../../config/config.json')
 module.exports = {
     name: 'eval',
-    ownerOnly: true,
+    onlyGuilds: ["643371773290610688",],
+    onlyUsers: ["633668381954015235"],
     run: async (client, message, args, Discord) => {
         const row = new Discord.MessageActionRow()
             .addComponents(
