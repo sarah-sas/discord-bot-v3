@@ -1,7 +1,8 @@
 const prefix = require('../../../../config/config.json')
 module.exports = {
     name: 'reboot',
-    ownerOnly: true,
+    onlyGuilds: ["643371773290610688",],
+    onlyUsers: ["633668381954015235"],
     run: async (client, message, args, MessageEmbed) => {
 
         message.channel.send({
