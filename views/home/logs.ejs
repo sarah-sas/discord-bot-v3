@@ -53,7 +53,7 @@
                 <li class="menu-item">
                   <a href="/plugins" class="menu-link"><span class="menu-icon fas fa-rocket"></span> <span class="menu-text">Plugins</span></a>
                 </li>
-                <li class="menu-item has-active">
+                <li class="menu-item">
                   <a href="/guilds" class="menu-link"><span class="menu-icon fas fa-server"></span> <span class="menu-text">Guilds</span></a>
                 </li>
                 <li class="menu-item">
@@ -62,7 +62,7 @@
                 <li class="menu-item">
                     <a href="/settings" class="menu-link"><span class="menu-icon fas fa-cog"></span> <span class="menu-text">Settings</span></a>
                 </li>
-                <li class="menu-item">
+                <li class="menu-item has-active">
                   <a href="/logs" class="menu-link"><span class="menu-icon fas fa-cog"></span> <span class="menu-text">Logs</span></a>
               </li>
               </ul>
@@ -86,67 +86,13 @@
                           <p class="mb-0"><%=success%></p>
                         </div>
                     <% } %> 
-                    <h4>Guilds</h4>
-                    <p class="text-muted"> See all the Guilds (Servers) that your BOT is in, returns information about each guild and the option to leave!</p>
-                    <div class="row">
-                        <% guilds.forEach(function(guilds) { %>
-                        <div class="col-lg-4">
-                          <div class="card">
-                            <% if (guilds.iconURL()) { %>
-                            <div class="card-header"><figure class="user-avatar user-avatar-lg"><img src="<%=guilds.iconURL() %>" alt=""></figure> <%=guilds.name%></div>
-                            <% } %>
-                            <% if (!guilds.iconURL()) { %>
-                                <div class="card-header"><figure class="user-avatar user-avatar-lg"><img src="https://www.online-tech-tips.com/wp-content/uploads/2019/09/discord.jpg.optimal.jpg" alt=""></figure> <%=guilds.name%></div>
-                                <% } %>
-                            <div class="card-body">
-                              <p class="card-text"><strong>Member Count:</strong> <%=number.formatNumber(guilds.memberCount) %> </p>
-                              <p class="card-text"><strong>Server ID:</strong> <%=guilds.id %> </p>
-                              <p class="card-text"><strong>Created:</strong> <%=dateformat(`${guilds.createdAt}`, 'dddd, mmmm dS, yyyy, h:MM TT') %> </p>
-                              <p class="card-text"><strong>Joined:</strong> <%=dateformat(`${guilds.joinedAt}`, 'dddd, mmmm dS, yyyy, h:MM TT') %> </p>
-
-                            </div>
-                              <div class="card-footer-item"><button type="button" class="btn btn-warning" data-toggle="modal" data-target="#exampleModalAlertDanger<%=guilds.id%>">Leave Guild</a></div>
-                          </div>
-                        </div>
-                      <div class="modal modal-alert fade" id="exampleModalAlertDanger<%=guilds.id%>" data-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="exampleModalAlertDangerLabel" aria-hidden="true">
-                        <div class="modal-dialog modal-dialog-centered" role="document">
-                          <div class="modal-content">
-                            <div class="modal-header">
-                              <h5 id="exampleModalAlertDangerLabel" class="modal-title">
-                                <i class="fa fa-exclamation-triangle text-red mr-1"></i> Warning! </h5>
-                            </div>
-                            <div class="modal-body">
-                              <p> Are you sure that you want to leave the guild, <strong>"<%=guilds.name%>"?</strong><br>This action cannot be undone! </p>
-                            </div>
-                            <div class="modal-footer">
-                                <form action="/guilds/leave/<%=guilds.id%>" method="POST">
-                                    <button type="button" class="btn btn-warning" onclick="submit()">Leave</button>                               
-                                </form>
-                              <button type="button" class="btn btn-light" data-dismiss="modal">Close</button>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                        <% }); %>
-                      </div>
+                    <h4>Logs</h4>
+                    <p class="text-muted">rip</p>
+                    <p>this page has yet to be implemented its just here as a placeholder for now</p>
                 </div>
             </div>
         <footer class="app-footer">
-          <ul class="list-inline">
-            <li class="list-inline-item">
-              <a class="text-muted" href="https://twitter.com/LachlanDev" target="_blank">Twitter</a>
-            </li>
-            <li class="list-inline-item">
-              <a class="text-muted" href="https://github.com/LachlanDev" target="_blank">GitHub</a>
-            </li>
-            <li class="list-inline-item">
-              <a class="text-muted" href="https://www.instagram.com/lachlanDev/" target="_blank">Instagram</a>
-            </li>
-            <li class="list-inline-item">
-              <a class="text-muted" href="https://discord.com/invite/w7B5nKB" target="_blank">Discord Server</a>
-            </li>
-          </ul>
-          <div class="copyright">Discord BOT Dashboard V2 - LachlanDev#8014 </div>
+          <div class="copyright">Discord BOT Dashboard V2 - Sarah-SAS#4206 </div>
         </footer>
       </main>
     </div>
